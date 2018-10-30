@@ -11,8 +11,10 @@ namespace Module2
         public string Name { get; set; }
         public double Difficulty;
         public bool Solved { get; set; }
+
         public void NewTask(string n)
         {
+
             Solved = false;
             Name = n;
             System.Threading.Thread.Sleep(42);
@@ -21,6 +23,7 @@ namespace Module2
         }
         public abstract double Time();
     }
+
 
     internal class Bug : Task
     {
@@ -45,3 +48,4 @@ namespace Module2
             return (Difficulty / 10 + 1) * 0.5;
         }
     }
+}
