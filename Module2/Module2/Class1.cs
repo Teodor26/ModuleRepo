@@ -11,13 +11,14 @@ namespace Module2
 
         void Solved(Task[] ta)
         {
+            double time;
             double count = 30.0;
             for (int i = 0; i < ta.Length; i++)
             {
 
-                double time = ta[i].Time();
-                time = count-time;
-                if (time <= 0)
+                time = ta[i].Time();
+                count = count - time;
+                if (count <= 0)
                 {
                     Random rand = new Random();
                     
