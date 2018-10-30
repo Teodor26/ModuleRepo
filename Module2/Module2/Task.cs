@@ -13,6 +13,7 @@ namespace Module2
         public bool Solved { get; set; }
         public void NewTask(string n)
         {
+
             Solved = false;
             Name = n;
             System.Threading.Thread.Sleep(42);
