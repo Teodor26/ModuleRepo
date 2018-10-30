@@ -8,6 +8,7 @@ namespace Module2
 {
     class Class1
     {
+
         void Solved(Task[] ta)
         {
             double count = 30.0;
