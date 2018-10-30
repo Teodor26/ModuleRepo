@@ -10,15 +10,17 @@ namespace Module2
     {
         static void Main(string[] args)
         {
+            Class1 class1 = new Class1();
+            TaskMaking taskMaking = new TaskMaking();
             Console.WriteLine("Input total amount Bag");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Input total amount Feature");
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine("Input total amount Technical assingment ");
             int c = int.Parse(Console.ReadLine());
-            Function(a, b, c);
-
-
+            Task[] ta = taskMaking.Function(a, b, c);
+            class1.Solved(ta);
+            Console.ReadLine();
         }
     }
 }
